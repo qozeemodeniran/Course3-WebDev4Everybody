@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+button {
+    background: #738725;
+    width: 150px;
+    font-size: 120%;
+}
+
+#demo {
+    color: #ffffff;
+    background: #239864;
+    padding: 10px;
+    font-size: 120%;
+}

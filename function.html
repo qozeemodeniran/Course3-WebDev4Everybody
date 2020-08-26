@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        function sayHello() {
+            alert("Hello User");
+        }
+    </script>
+
+    <script>
+        function welcomeMsg(msg) {
+            alert(msg);
+            var name = prompt("What is your name?");
+            document.write("Welcome " + name);
+            return name;
+        }
+    </script>
+    <input type="button" onclick="welcomeMsg()" value="greet" />
+    <br /><br />
+
+    <button onclick="document.getElementById('change').innerHTML = 'Clicked first button';">First Button</button>
+
+    <button onclick="document.getElementById('change').innerHTML = 'Clicked second button';">Second Button</button>
+    <br /><br />
+    <button onclick="document.getElementById('dummy1').style.display = 'none';">Close first dummy text.</button>
+    <br /><br />
+    <button onclick="document.getElementById('dummy2').style.display = 'none';">Close second dummy text.</button>
+
+
+    <p id="dummy1">Dummy text</p>
+    <p id="change">Change text</p>
+    <p id="dummy2">Dummy text</p>
+
+</bod>
+
+</html>

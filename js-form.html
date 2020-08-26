@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS form</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        form {
+            background: #52683647;
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function check() {
+            var email1 = document.getElementById("email1");
+            var email2 = document.getElementById("email2");
+
+            if (email1.value != email2.value) {
+                alert("The two emails must match!");
+            }
+        }
+    </script>
+    <form action="">
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="name">
+                Name <br>
+                <input type="text" name="name" id="name" placeholder="first and last names"><br><br>
+            </label>
+
+            <label for="discipline">
+                Discipline <br>
+                <input type="text" name="discipline" id="discipline" placeholder="Primary field of interest"><br><br>
+            </label>
+
+            <label for="dob">
+                DOB <br>
+                <input type="date" name="dob" id="dob" placeholder=""><br><br>
+            </label>
+
+            <label for="color">
+                Color <br>
+                <input type="color" name="color" id="color" placeholder="best color"><br><br>
+            </label>
+
+            <label for="email">
+                Email <br>
+                <input type="email" name="email1" id="email1" placeholder="valid email address"><br><br>
+            </label>
+
+            <label for="email">
+                Confirm Email <br>
+                <input type="email" name="email2"  id="email2" placeholder="valid email address" onchange="check()"><br><br>
+            </label>
+
+
+            <label for="website">
+                Website <br>
+                <input type="url" name="website" id="website" placeholder="valid url"><br><br>
+            </label>
+
+            <label for="pin">
+                PIN <br>
+                <input type="text" name="pin" pattern="[0-9]{4}" placeholder="4 digits pin"><br><br>
+            </label>
+
+
+            <label for="submit">
+                <input type="submit" name="submit" value="submit"><br><br>
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
